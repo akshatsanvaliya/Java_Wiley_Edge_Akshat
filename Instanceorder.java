@@ -1,11 +1,16 @@
 package Wiley_pkg_1;
 
 public class Instanceorder {
+	String name ;
+	int age;
 	{
+		name = "Akshat";
+		age = 21;
 		System.out.println("instance block");
 	}
 		
 	public Instanceorder() {
+		System.out.println("from class: - " + (this.age + this.name));
 		System.out.println("Construcor block");
 }
 	public Instanceorder(int a, int b) {
