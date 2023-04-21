@@ -8,6 +8,7 @@ public class ConstType {
 	
 	public ConstType(double a , int b)
 	{
+		this(2,7);
 		System.out.println(" two arg in constr. but with different DT: " + (a+b));
 	}
 	
