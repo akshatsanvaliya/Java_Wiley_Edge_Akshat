@@ -17,9 +17,12 @@ public class StaticBlock {
 		
 		StaticBlock sb= new StaticBlock();
 		
+		System.out.println("Object Address: -  "+ sb);
 		new StaticBlock();
 		new StaticBlock();
 		new StaticBlock();
+		System.out.println("Object Address: -  "+ sb);
+
 		
 
 	}
