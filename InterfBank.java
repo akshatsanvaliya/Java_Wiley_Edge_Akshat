@@ -7,7 +7,7 @@ interface Bank{
 interface Bank1{
 	void account();
 }
-interface ATM extends Bank, Bank1{
+interface ATM extends Bank, Bank1{//we can extends as many interface as we can.
 	void insertCard();
 	void selectOption();
 	void enterPassword();
@@ -27,34 +27,36 @@ abstract class NewATM implements ATM, AA{
 		
 	}
 
-public void insertCard() {
 
-System.out.println("Inside insertCard");
-	
-}
 
-@Override
-public void selectOption() {
-	System.out.println("Inside selectCard");
-	// TODO Auto-generated method stub
-	
-}
 
-@Override
-public void enterPassword() {
-	System.out.println("Inside enterPassword");
-	// TODO Auto-generated method stub
-	
-}
+
+
 
 }
 
 public class InterfBank extends NewATM {
+	public void insertCard() {
+
+		System.out.println("Inside insertCard");
+			
+		}
+
+		@Override
+		public void selectOption() {
+			System.out.println("Inside selectCard");
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void enterPassword() {
+			System.out.println("Inside enterPassword");
+			// TODO Auto-generated method stub
+			
+		}
 
 	public static void main(String[] args) {
-		NewATM nt=  new NewATM() {
-			
-		};
 		
 	}
 }	
