@@ -16,6 +16,15 @@ class Employee{
 		this.age = age;
 	}
 }
+
+ class EmployeeImpl{
+	public void show(Employee e) {
+		//System.out.println("Inside show method: "+ e);
+		System.out.println("Calling from different class:  ");
+		System.out.println("Employee Name: "+ e.getName()  + "\n"+ "Employee Age: "+ e.getAge());
+
+	}
+}
 public class EncapsulateClass {
 
 	public static void main(String[] args) {
@@ -24,6 +33,9 @@ e.setName("Akshat");
 e.setAge(21);
 //e.getName();
 //e.getAge();
+EmployeeImpl el= new EmployeeImpl();
+el.show(e);
+System.out.println("\nCalling form main class's method:  ");
 System.out.println("Employee Name: "+ e.getName()  + "\n"+ "Employee Age: "+ e.getAge());
 
 	}
