@@ -10,15 +10,22 @@ abstract class Lol{ // must declare the class abstract in order to create abstra
 		
 		System.out.println("main method define insode abstract class");
 	}
+	public Lol() {
+		System.out.println("Lol's constructor");
+	}
 }
  class Lol1 extends Lol{
-		@Override
 	public void m1()
 	{
 		System.out.println("Inside Lol1 class which extends Lol");
 	}
+	public Lol1() {
+		System.out.println("Lol1\'s constructor");
+	}
 	
 }
+ 
+
 public class AbstractClass {
 
 	public static void main(String[] args) {
