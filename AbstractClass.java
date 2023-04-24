@@ -1,6 +1,9 @@
 package Wiley_pkg_1;
 
 abstract class Lol{ // must declare the class abstract in order to create abstract method
+	{
+		System.out.println("Lol instance block");
+	}
 	public abstract void  m1();
 		
 	public void m2()
@@ -20,6 +23,9 @@ abstract class Lol{ // must declare the class abstract in order to create abstra
 	}
 }
  class Lol1 extends Lol{
+	 {
+			System.out.println("Lol1 instance block");
+		}
 	public void m1()
 	{
 		System.out.println("Inside Lol1 class which extends Lol");
@@ -38,6 +44,7 @@ public class AbstractClass {
 
 	public static void main(String[] args) {
 		//Lol1 t2= new Lol1();
+		System.out.println("Inside Main class");
 		Lol1 l1= new Lol1();
 		l1.m1();
 		l1.m2();
