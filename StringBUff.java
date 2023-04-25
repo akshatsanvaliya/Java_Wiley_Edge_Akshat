@@ -6,6 +6,9 @@ public class StringBUff {
 StringBuffer sb= new StringBuffer("Akshat");
 StringBuffer sb1= new StringBuffer("Akshat");
 StringBuffer sb2= new StringBuffer("Akshat");
+StringBuilder bs = new StringBuilder("Sanvaliya");
+System.out.println("String Builder: "+bs.reverse());
+
 
 String sbs= "Akshat";
 String sbc= "Akshat";
@@ -20,6 +23,9 @@ System.out.println(sb.append(" Sanvaliya"));
 System.out.println(sb);
 
 System.out.println(sb.insert(16, "D"));
+System.out.println("Delete: "+sb.delete(0, 5));
+System.out.println("Reverse: "+sb1.reverse());
+
 
 	}
 
