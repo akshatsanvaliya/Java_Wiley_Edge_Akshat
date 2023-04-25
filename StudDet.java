@@ -18,13 +18,14 @@ public class StudDet {
     	StudDet student = new StudDet("Akshat", "Male", 21, "Class 12");
         try {
             FileOutputStream fos = new FileOutputStream("C:\\Users\\Admin\\Documents\\student.txt");
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fos);
-            objectOutputStream.writeUTF(student.gender);
-            objectOutputStream.writeUTF(student.name);
-            objectOutputStream.writeInt(student.age);
-            objectOutputStream.writeUTF(student.className);
-            objectOutputStream.close();
+            DataOutputStream oos = new DataOutputStream(fos);
+            oos.writeUTF(student.gender);
+            oos.writeUTF(student.name);
+            oos.writeInt(student.age);
+            oos.writeUTF(student.className);
+            oos.close();
             fos.close();
+            oos.flush();
             fos.flush();
             System.out.println("Student details saved successfully!");
         } catch (IOException e) {
