@@ -6,8 +6,21 @@ public class StringBUff {
 StringBuffer sb= new StringBuffer("Akshat");
 StringBuffer sb1= new StringBuffer("Akshat");
 StringBuffer sb2= new StringBuffer("Akshat");
-System.out.println(sb.equals(sb2));
+
+String sbs= "Akshat";
+String sbc= "Akshat";
+
+
+System.out.println("Comparing String Buffer to String Buffer"+ sb.equals(sb2));
+System.out.println("Comparing String to String Buffer: "+sbs.equals(sb2.toString()));
+System.out.println("Comparing String Buffer to String Buffer using .toString(): "+sb.equals(sb2.toString()));
+
+System.out.println(sb.append(" Sanvaliya"));
+
 System.out.println(sb);
+
+System.out.println(sb.insert(16, "D"));
+
 	}
 
 }
