@@ -21,6 +21,13 @@ public class StringCls {
 		String str4 =str.concat(" "+str2 + " ");
 		System.out.println("str4 +str4: "+str4.concat(str4));
 		System.out.println("Replace: "+ str.replace("A", "K"));
+		
+		String str6[]= str4.split(str);
+		
+		for(String string: str6)
+		{
+			System.out.println("\nSplit: "+ string);
+		}
 	}
 
 }
