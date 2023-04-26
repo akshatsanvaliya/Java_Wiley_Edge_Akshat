@@ -16,10 +16,10 @@ public class StudRecRead {
 			 List<StudDet> listStud= new ArrayList<>();
 			 while(true) {
 				 try {
-					 String name = dis.readUTF();
-					 String gender = dis.readUTF();
+					 String name = dis.readLine();
+					 String gender = dis.readLine();
 					 int age = dis.readInt();
-					 String classname = dis.readUTF();
+					 String classname = dis.readLine();
 					 
 					 StudDet sd = new StudDet(name, gender, age, classname);
 					 listStud.add(sd);
@@ -37,7 +37,7 @@ public class StudRecRead {
 			
 	
 	
-	String inputFile = "C:\\Users\\Admin\\Documents\\student.dat";
+	String inputFile = "C:\\Users\\Admin\\Documents\\student.txt";
 	
 	try {
 		StudRecRead srr = new StudRecRead(inputFile);
