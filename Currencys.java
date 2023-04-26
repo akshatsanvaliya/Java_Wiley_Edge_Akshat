@@ -14,6 +14,13 @@ public class Currencys {
 			NumberFormat inrFormat = NumberFormat.getCurrencyInstance(new Locale("en", "IN"));
 			String formattedValue = inrFormat.format(108.5);
 			System.out.println(formattedValue);
+			
+			double price = 2000.22;
+			Locale local = new Locale("en", "US");
+			NumberFormat currencyFor = NumberFormat.getCurrencyInstance(local);
+			String finalprice = currencyFor.format(price);
+			System.out.println(finalprice);
+			
 	}
 
 }
