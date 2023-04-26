@@ -47,5 +47,11 @@ public class DateTimeCls {
         DateTimeFormatter format5 = DateTimeFormatter.ofPattern("hh:mm:ss a");
         String formattedTime = apnatime.format(format5);
         System.out.println("Formatted Time: " + formattedTime);
+        
+        
+        String datetest = "26/04/2023";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate date = LocalDate.parse(datetest, formatter);
+        System.out.println("Parse: "+date);
     }
 }
