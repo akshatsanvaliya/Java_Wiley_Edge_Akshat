@@ -7,7 +7,7 @@ public class PatternMatchs {
 
 	public static void main(String[] args) {
 
-		Pattern pattern = Pattern.compile("agent \\d{3,4}");
+		Pattern pattern = Pattern.compile("agent {3,4}");
 		Matcher matcher = pattern.matcher("agent 007");
 		boolean found = matcher.find();
 		boolean match = matcher.matches();
