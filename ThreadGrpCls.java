@@ -12,8 +12,8 @@ ThreadGroup tg = new ThreadGroup("Parent Group");
 ThreadGroup tg2= new ThreadGroup(tg, "Child Grp");
 
 Thread t= new Thread(tg, new Demo(),"First");
-Thread t2= new Thread(tg, new Demo(),"First");
-Thread t3= new Thread(tg, new Demo(),"First");
+Thread t2= new Thread(tg, new Demo(),"Second");
+Thread t3= new Thread(tg, new Demo(),"Third");
 
 t.start();
 t2.start();
