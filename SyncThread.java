@@ -23,7 +23,7 @@ class Person1 extends Thread{
 	}
 	
 	public void run() {
-		
+		System.out.println("Person1");
 		s1.writeLn(5);
 		
 	}
@@ -41,8 +41,9 @@ class Person2 extends Thread{
 	}
 	
 	public void run() {
-		
 		s1.writeLn(5);
+		System.out.println("Person2");
+
 		
 	}
 	
